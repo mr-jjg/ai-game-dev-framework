@@ -71,15 +71,24 @@ Planning happens before every session. It can take two minutes. It never gets sk
 
 ## Getting started
 
-**1. Fork and clone.** That's the whole setup. No scripts, no dependencies,
-no database.
+**1. Fork and clone.** No scripts, no dependencies.
 
-**2. Open Claude Code in the repo.** Tell it you're starting a new project.
+**2. Create a Claude.ai Project.** Set its Custom Instructions to:
+
+> Before responding to any message in this Project, read INSTRUCTIONS.md from the
+> attached files and follow it exactly.
+
+Claude.ai has no filename-based auto-load of its own, so this is what makes
+`claude-ai/INSTRUCTIONS.md` take effect every session instead of sitting unread
+alongside the other files in the zip - the Claude.ai equivalent of `CLAUDE.md`
+auto-loading in Claude Code.
+
+**3. Open Claude Code in the repo.** Tell it you're starting a new project.
 It auto-loads `CLAUDE.md`, sees that `CONCEPT.md` is blank, and runs
 SESSION_1: working with you to define the game and seed every project document.
 
-**3. Create a Claude.ai Project.** From here on, Claude Code prepares each
-session's context package. You drop it in and build.
+**4. Back to Claude.ai.** From here on, Claude Code prepares each session's
+context package. Drop it into the Project you created in step 2, and build.
 
 ---
 
