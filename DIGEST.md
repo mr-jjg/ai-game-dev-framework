@@ -3,11 +3,11 @@
 <!-- If this session number does not match the most recent SESSION_LOG.csv entry, DIGEST.md is stale. -->
 <!-- Codebase map. Read this cold to understand what exists, where it lives, and how to call it. -->
 <!-- Scripts: class name + typed function signatures + return types + cross-system signals. -->
-<!-- Scenes: node structure + exported variables. -->
+<!-- Structural units: composition/hierarchy + exposed or configurable parameters. -->
 <!-- Assets: filename and type only. No summaries. -->
 
-## Autoloads
-<!-- Global singletons - accessible from anywhere. Document these first. -->
+## Singletons
+<!-- Global state - accessible from anywhere. Document these first. -->
 
 ## Codebase
 <!-- Mirror the project directory tree. -->
