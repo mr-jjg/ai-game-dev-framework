@@ -56,15 +56,15 @@ Planning happens before every session. It can take two minutes. It never gets sk
 
 | File | What it is |
 |------|-----------|
-| `INSTRUCTIONS.md` | Claude.ai's standing instructions. Goes in every session. |
+| `claude-ai/INSTRUCTIONS.md` | Claude.ai's standing instructions. Goes in every session. |
 | `CONCEPT.md` | What the game is. Genre, core loop, scope, what it will not do. |
 | `ROADMAP.md` | What's being built and in what order. The living spec. |
 | `GDD.md` | How it works. Grows as systems get designed. |
 | `FYI.md` | Decision log. Why choices were made, and what they foreclose. |
 | `DIGEST.md` | Codebase map. Like a header file for the whole project. |
 | `SESSION_LOG.csv` | One row per session. The index and the audit trail. |
-| `prompts/PLANNING.md` | Claude Code's standing instructions. |
-| `prompts/SESSION_END.md` | How Claude.ai closes a session. |
+| `CLAUDE.md` | Claude Code's standing instructions. Auto-loaded every session. |
+| `claude-ai/SESSION_END.md` | How Claude.ai closes a session. |
 | `update.py` | Applies a finished session's changes to the repo. |
 
 ---
@@ -75,7 +75,7 @@ Planning happens before every session. It can take two minutes. It never gets sk
 no database.
 
 **2. Open Claude Code in the repo.** Tell it you're starting a new project.
-It reads `prompts/PLANNING.md`, sees that `CONCEPT.md` is blank, and runs
+It auto-loads `CLAUDE.md`, sees that `CONCEPT.md` is blank, and runs
 SESSION_1: working with you to define the game and seed every project document.
 
 **3. Create a Claude.ai Project.** From here on, Claude Code prepares each

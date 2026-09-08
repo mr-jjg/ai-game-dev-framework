@@ -1,4 +1,4 @@
-# PLANNING.md
+# CLAUDE.md
 # Claude Code standing instructions — read this file at the start of every session.
 
 ---
